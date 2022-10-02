@@ -221,10 +221,14 @@ textarea{
 }
 input, textarea{
     background-color:#a69a9892;
-    border-radius:2em;
     border:none;
     color:#371622;
 }
+
+textarea{
+    border-radius:2em;
+}
+
 .submit{
     margin-top:5%;
     color:#EACEC9;
