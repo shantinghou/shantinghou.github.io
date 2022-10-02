@@ -1,3 +1,4 @@
+/* I organize my css by fonts and then sections and then by specific screen sizes */
 /* Import Font Styles */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500;600&family=Libre+Baskerville&display=swap');
 body{
@@ -11,7 +12,7 @@ body{
     box-sizing: inherit;
 }
 
-/* Styling Text */
+/* Styling Text, with h1 being boldest and biggest font, h2 following...etc */
 h1{
     font-size: 5em;
     font-weight: 600;
@@ -21,7 +22,6 @@ h1{
     margin-top:0.1em;
     margin-bottom:0;
 }
-
 h2{
     border-left: 3px solid;
     color:inherit;
@@ -30,7 +30,6 @@ h2{
     font-size: 40px;
     letter-spacing: 0.1em;
 }
-
 h3{
     font-weight: 500;
     font-size: 40px;
@@ -38,7 +37,6 @@ h3{
     letter-spacing: 0.2em;
     color: #EACEC9;
 }
-
 h4{
     margin-top:0.5em;
     font-weight: 600;
@@ -47,7 +45,6 @@ h4{
     letter-spacing: 0.3em;
     color: #796459;
 }
-
 h6{
     font-size:15px;
     color:#371622;
@@ -62,7 +59,6 @@ h6{
 .page-item>a{
     float:right;
 }
-
 a{
     font-weight: 500;
     font-size: 14px;
@@ -73,7 +69,10 @@ a{
     text-decoration:none;
     padding: 0px 30px;
 }
-
+#active{
+    font-weight: 600;
+    color:#796459;
+}
 p{
     font-family: 'Libre Baskerville', serif;
     font-size: 15px;
@@ -82,9 +81,8 @@ p{
     color: #371622;
 }
 
-/* Sections */
-
-/* header section */
+/* SECTIONS */
+/* header */
 .header{
     position: relative;
     width: 100%;
@@ -95,9 +93,7 @@ p{
     background-position: top center;
     background-repeat: no-repeat;
     top:0;
-
 }
-
 .topnav{
     display:block;
     margin-right:auto;
@@ -105,34 +101,30 @@ p{
     width:fit-content; 
 }
 
-/* about me section */
+/* about me, displayed in 2 column layout*/
 .about{
     width: 100%;
     padding: 5em 15%;
     display:block;
     color:#371622;
 }
-
 .text-description{
     width: 40%;
     height:auto;
     display:inline-block;
     margin-right: 8%
 }
-
 .my-image{
     width: 50%;
     height:auto;
     display:inline-block;
 }
-
 .profile{
     width:100%;
     float:left;
 }
 
-/* recent work */
-
+/* recent, displayed in a maner of 3 columns for images*/
 .recent{
     clear:both;
     display:block;
@@ -161,13 +153,11 @@ p{
     width: 100%;
 }
 
-/* portfolio */
-
+/* portfolio, displayed in a maner of 3 columns for cards*/
 .portfolio{
     margin: 5em 15% 10em;
     height:fit-content;
 }
-
 .browse{
     display:grid;
     gap: 2% 2%;
@@ -175,7 +165,6 @@ p{
     width:100%;
     margin: 5em auto 0;
 }
-
 .page-item{
     width:100%;
     height:27em;
@@ -183,13 +172,11 @@ p{
     box-shadow:1px 1px 5px 1px #a69a9892;
     position:relative;
 }
-
 .link{
     object-fit: cover;
     width: 100%;
     height: 50%;
 }
-
 .button{
     position:absolute;
     display:block;
@@ -198,7 +185,6 @@ p{
 }
 
 /* feedback */
-
 .feedback{
     width: 100%;
     height: fit-content;
@@ -220,15 +206,14 @@ textarea{
     width:100%;
 }
 input, textarea{
+    border-radius:2em;
     background-color:#a69a9892;
     border:none;
     color:#371622;
 }
-
 textarea{
-    border-radius:2em;
+    padding:1em;
 }
-
 .submit{
     margin-top:5%;
     color:#EACEC9;
@@ -260,8 +245,11 @@ footer>a:hover{
     color:#EACEC9;
 }
 
+/* Column drop to 2 columns for images and cards with sligtht font size adjustments 
+    Section height is fixed so that scrollbar is implemented for each section that overflows.
+    About section column drops so text description and image is stacked*/
 @media screen and (max-width: 992px) {
-
+    /* font */
     h1{
         font-size:65px;
         margin-top:0.6em;
@@ -298,7 +286,9 @@ footer>a:hover{
     
 }
 
+/* Small tweeks in font size */
 @media screen and (max-width: 768px) {
+    /* font */
     h1{
         font-size:55px;
     }
@@ -306,34 +296,31 @@ footer>a:hover{
         font-size:35px;
         margin-top:0;
     }
-
     h3{
         font-size:25px;
     }
-
     h4{
         font-size:20px;
     }
-
     a{
         font-size:10px;
     }
-
     p{
         font-size: 13px;
     }
 }
 
-@media screen and (max-width: 576px) {
+/* Column drop to only one column for images and cards with sligtht font size adjustments 
+    Scrollbard is still in place*/
 
+@media screen and (max-width: 576px) { 
+    /* font */
     h1{
         font-size:45px;
     }
-
     h4{
         font-size:20px;
     }
-
     p{
         font-size: 10px;
     }
