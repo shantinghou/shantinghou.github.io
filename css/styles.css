@@ -388,6 +388,15 @@ footer>a:hover{
     p{
         font-size: 13px;
     }
+
+    /* card questions */
+    .card{
+        width:30%;
+        display:inline-block;
+    }
+    .card>h5{
+        font-size:smaller;
+    }
 }
 
 /* Column drop to only one column for images and cards with sligtht font size adjustments 
@@ -424,7 +433,7 @@ footer>a:hover{
 
     /* more about me */
     .card{
-        width:40%;
+        width:70%;
         margin: 5% auto;
         display:block;
     }
