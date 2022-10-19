@@ -1,3 +1,4 @@
+// QUESTION 2
 // Button that generates random countries to visit
 // got list from https://css-tricks.com/snippets/javascript/array-of-country-names/, removed some countries 
 var countries = 

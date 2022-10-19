@@ -1,3 +1,4 @@
+// QUESTION 4
 // scroll back to top after crossing half of the web page
 
 // getting height of web page

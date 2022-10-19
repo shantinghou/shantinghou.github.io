@@ -1,3 +1,4 @@
+// QUESTION 1
 // get question card elements
 var fromCard = document.getElementById("from");
 var placeCard = document.getElementById("place");

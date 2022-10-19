@@ -1,3 +1,4 @@
+// QUESTION 3
 // shows photo when mouse over
 var homeHolder = document.getElementById("homephoto");
 var home = document.querySelector("#homephoto>img");
